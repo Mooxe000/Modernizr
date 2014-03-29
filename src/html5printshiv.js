@@ -1,3 +1,8 @@
+define(function() {
+  // Take the html5 variable out of the
+  // html5shiv scope so we can return it.
+  var html5;
+
 /**
 * @preserve HTML5 Shiv prev3.7.1 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
 */
@@ -497,3 +502,6 @@
   shivPrint(document);
 
 }(this, document));
+
+  return html5;
+});
